@@ -74,7 +74,7 @@ const Wrapper = styled.div`
     }
 
     .hamburger {
-      position: absolute;
+      position: fixed;
       display: none;
       background-color: rgb(14, 41, 95);
       color: snow;
