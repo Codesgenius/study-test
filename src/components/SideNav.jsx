@@ -107,11 +107,11 @@ const Wrapper = styled.section`
   .menu-main .menu-links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 
     & a {
       color: snow;
       text-decoration: none;
+      margin-bottom: 10px;
     }
   }
 

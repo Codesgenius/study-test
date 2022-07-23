@@ -21,6 +21,7 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 10px;
   border-radius: 20px;
+  margin-bottom: 10px;
   background-color: ${({ group }) =>
     group === "primary"
       ? "rgb(206 206 239)"
