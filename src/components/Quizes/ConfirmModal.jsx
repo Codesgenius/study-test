@@ -6,22 +6,24 @@ import { FaTimes } from "react-icons/fa";
 const ConfirmModal = ({ action, close }) => {
   return (
     <Wrapper>
-      <div className="confirm-main-con">
-        <div className="confirm-con">
-          <h3>Are you sure to start the quiz?</h3>
-          <p>Once you start the quiz, you cannot pause the time</p>
-          <p>
-            If your time runs out, you answers will be submitted automatically
-          </p>
-          <p>You must not leave the exam window once started</p>
-        </div>
+      <div>
+        <div className="confirm-main-con">
+          <div className="confirm-con">
+            <h3>Are you sure to start the quiz?</h3>
+            <p>Once you start the quiz, you cannot pause the time</p>
+            <p>
+              If your time runs out, you answers will be submitted automatically
+            </p>
+            <p>You must not leave the exam window once started</p>
+          </div>
 
-        <div className="confirm-button-con" onClick={action}>
-          <SlickButton text={"Start Quiz"} />
-        </div>
+          <div className="confirm-button-con" onClick={action}>
+            <SlickButton text={"Start Quiz"} />
+          </div>
 
-        <div className="close-btn" onClick={close}>
-          <FaTimes />
+          <div className="close-btn" onClick={close}>
+            <FaTimes />
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -32,18 +34,23 @@ const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 101;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+
+  * {
+    box-sizing: border-box;
+  }
 
   .confirm-main-con {
     position: relative;
-    min-width: fit-content;
-    width: 300px;
+    width: 100%;
+    max-width: max-content;
     background-color: #f5f5f5;
     border-radius: 20px;
     padding: 20px;

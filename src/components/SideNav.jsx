@@ -35,9 +35,11 @@ const SideNav = () => {
                 onClick={() => dispatch(toggleSideBar())}
               >
                 <StyledNavLink
-                  className={location.pathname === route.path ? "active" : ""}
+                  className={
+                    location.pathname.startsWith(route.path) ? "active" : ""
+                  }
                 >
-                  {route.title}
+                  {route.icon} <p>{route.title}</p>
                 </StyledNavLink>
               </NavLink>
             ))}
@@ -146,6 +148,12 @@ const StyledNavLink = styled.div`
   cursor: pointer;
   border-radius: 7px;
   transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0 0 0 10px;
+  }
 
   &.active {
     background-color: rgba(202, 210, 226, 0.4) !important;
