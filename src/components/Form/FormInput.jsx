@@ -1,4 +1,4 @@
-import Reactfrom "react";
+import React from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import styled from "styled-components";
 
