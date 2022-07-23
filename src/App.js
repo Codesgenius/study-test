@@ -5,12 +5,17 @@ import StudentCourses from "./pages/student/Courses";
 import StudentAssesments from "./pages/student/Assesments";
 import StudentExams from "./pages/student/Exams";
 import StudentGrades from "./pages/student/Grades";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<StudentDashboard />} />
+        <Route path="/auth/login" element={<Login />} />
+        <Route path="/auth/register" element={<Register />} />
+
         <Route path="/student" element={<AppLayout />}>
           <Route path="/student/dashboard" element={<StudentDashboard />} />
           <Route path="/student/courses" element={<StudentCourses />} />

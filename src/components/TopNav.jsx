@@ -135,6 +135,10 @@ const Wrapper = styled.div`
         color: rgb(131, 30, 55);
         margin: 0 15px;
 
+        @media (max-width: 475px) {
+          margin: 0 5px;
+        }
+
         &:hover {
           color: rgb(172, 55, 84);
         }
@@ -144,6 +148,10 @@ const Wrapper = styled.div`
         cursor: pointer;
         color: rgb(28, 39, 139);
         margin: 0 10px;
+
+        @media (max-width: 475px) {
+          margin: 0 5px;
+        }
 
         &:hover {
           color: rgb(55, 67, 172);
