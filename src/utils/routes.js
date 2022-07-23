@@ -9,6 +9,10 @@ export const routes = {
       path: "/student/courses",
     },
     {
+      title: "Quizes",
+      path: "/student/quizes",
+    },
+    {
       title: "Assesments",
       path: "/student/assesments",
     },

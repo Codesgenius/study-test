@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ProfileImage from "../asset/imgs/profile.jpg";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { FaBell, FaSearch, FaAngleDown } from "react-icons/fa";
@@ -25,7 +26,9 @@ const TopNav = () => {
 
         <h3 className="page-title">
           {routes[userType].find((route) => route.path === location.pathname)
-            .title || "StudyTest"}
+            ?.title ||
+            location.pathname.split("/")[3] ||
+            "StudyTest"}
         </h3>
       </div>
 
@@ -37,10 +40,7 @@ const TopNav = () => {
 
         <div className="user-profile">
           <div className="img-con">
-            <img
-              src="https://source.unsplash.com/1600x900"
-              alt="user-profile"
-            />
+            <img src={ProfileImage} alt="user-profile" />
           </div>
           <FaAngleDown />
         </div>
@@ -66,6 +66,10 @@ const Wrapper = styled.div`
 
       @media (max-width: 900px) {
         padding-left: 80px;
+      }
+
+      @media (max-width: 475px) {
+        padding-left: 70px;
       }
     }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { toggleSideBar } from "../redux/userSlice";
@@ -10,6 +10,7 @@ import { routes } from "../utils/routes";
 const SideNav = () => {
   const location = useLocation();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const isSideNavOpen = useSelector((state) => state.user.isSideNavOpen);
   const userType = useSelector((state) => state.user.account);
 
@@ -44,7 +45,7 @@ const SideNav = () => {
         </div>
 
         <div className="menu-bottom">
-          <div className="logout">
+          <div className="logout" onClick={() => navigate("/auth/login")}>
             <h3>Sign out</h3>
             <div className="logout-icon">
               <RiLogoutCircleRLine />

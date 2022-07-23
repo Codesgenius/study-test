@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Range from "./Range";
+import { useNavigate } from "react-router-dom";
 
 const Card = () => {
+  const navigate = useNavigate();
+
   return (
-    <StyledCard>
+    <StyledCard onClick={() => navigate("/student/courses/DM1923")}>
       <div className="card-content">
         <h3 className="c-code">MTH 2021/10238</h3>
         <p className="c-title">Mathematics</p>

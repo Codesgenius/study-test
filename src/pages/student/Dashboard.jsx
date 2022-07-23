@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { MdVerified } from "react-icons/md";
 import InfoCard from "../../components/Dashboard/InfoCard";
 import Assesment from "../../components/Dashboard/Assesment";
+import ProfileImage from "../../asset/imgs/profile.jpg";
 
 const Dashboard = () => {
   return (
@@ -18,7 +19,7 @@ const Dashboard = () => {
       <div className="user-info-con">
         <div className="profile-image-con">
           <div className="img-con">
-            <img src="https://source.unsplash.com/1600x900" alt="profile" />
+            <img src={ProfileImage} alt="profile" />
           </div>
         </div>
 
@@ -191,7 +192,7 @@ const Wrapper = styled.div`
       border: 2px solid #f5f5f5;
       border-radius: 20px;
       padding: 20px;
-      color: rgb(141 126 126);
+      color: rgb(102, 95, 95);
 
       @media (max-width: 600px) {
         padding: 10px;
@@ -226,7 +227,7 @@ const Wrapper = styled.div`
       flex: 3;
 
       .assessments-con-top > h3 {
-        color: rgb(141 126 126);
+        color: rgb(102, 95, 95);
       }
 
       .assessments-con-bottom {
