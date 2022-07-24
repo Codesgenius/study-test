@@ -25,7 +25,7 @@ const CourseDetails = () => {
               <p>
                 Instructor: <span>{courses[0].instructor}</span>
               </p>
-              <div className="message-quizes:">
+              <div className="message-instructor">
                 <div>Message Instructor</div>
               </div>
             </div>
