@@ -8,7 +8,13 @@ const Quizes = () => {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const action = () => {
-    navigate("/student/quiz");
+    navigate("/student/quizes/start", {
+      state: {
+        title: "Mathematical Logic Quiz 1",
+        quesLength: 25,
+        duration: 60,
+      },
+    });
   };
   return (
     <Wrapper>

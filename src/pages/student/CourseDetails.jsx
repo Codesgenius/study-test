@@ -36,13 +36,13 @@ const CourseDetails = () => {
               customClass="primary"
               title="Current Score"
               description="The average score for all assessments already completed"
-              score={78}
+              score={"78%"}
             />
             <ScoreCard
               customClass="secondary"
               title="Total Score"
               description="Total score, outstanding assesments are counted as zero"
-              score={56}
+              score={"56%"}
             />
           </div>
         </div>

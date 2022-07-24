@@ -4,6 +4,7 @@ import StudentDashboard from "./pages/student/Dashboard";
 import StudentCourses from "./pages/student/Courses";
 import CourseDetails from "./pages/student/CourseDetails";
 import StudentQuizes from "./pages/student/Quizes";
+import QuizesStart from "./pages/student/QuizesStart";
 import StudentAssesments from "./pages/student/Assesments";
 import StudentExams from "./pages/student/Exams";
 import StudentGrades from "./pages/student/Grades";
@@ -26,6 +27,7 @@ function App() {
             element={<CourseDetails />}
           />
           <Route path="/student/quizes" element={<StudentQuizes />} />
+          <Route path="/student/quizes/start" element={<QuizesStart />} />
           <Route path="/student/assesments" element={<StudentAssesments />} />
           <Route path="/student/exams" element={<StudentExams />} />
           <Route path="/student/grades" element={<StudentGrades />} />
