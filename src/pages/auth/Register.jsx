@@ -75,7 +75,7 @@ const Register = () => {
                   <label htmlFor="registrationNo">Registration Number</label>
                   <FormInput
                     id="registrationNo"
-                    value={userDetails.accountNo}
+                    value={userDetails.registrationNo}
                     placeholder=""
                     name="registrationNo"
                     onChange={handleChange}
