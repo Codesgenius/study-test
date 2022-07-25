@@ -23,7 +23,9 @@ const Register = () => {
 
     //Will navigate based on the response of the server
     //The API will determine the user type
-    navigate(`/${accountType}/dashboard`);
+    if (Object.values(userDetails).every((value) => value !== "")) {
+      navigate(`/${accountType}/dashboard`);
+    }
   };
 
   const handleChange = (e) => {

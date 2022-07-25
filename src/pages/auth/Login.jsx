@@ -17,6 +17,9 @@ const Login = () => {
 
     //Will navigate based on the response of the server
     //The API will determine the user type
+    if (Object.values(userDetails).every((value) => value !== "")) {
+      navigate(`/${accountType}/dashboard`);
+    }
     navigate("/student/dashboard");
   };
 
