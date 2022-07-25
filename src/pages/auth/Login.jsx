@@ -20,7 +20,6 @@ const Login = () => {
     if (Object.values(userDetails).every((value) => value !== "")) {
       navigate(`/${accountType}/dashboard`);
     }
-    navigate("/student/dashboard");
   };
 
   const handleChange = (e) => {
