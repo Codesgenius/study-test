@@ -12,7 +12,7 @@ const Register = () => {
   const [userDetails, setUserDetails] = useState({
     emailAddress: "",
     password: "",
-    registrationNumber: "",
+    registrationNo: "",
     firstName: "",
     lastName: "",
     phoneNo: "",
@@ -77,7 +77,7 @@ const Register = () => {
                     id="registrationNo"
                     value={userDetails.accountNo}
                     placeholder=""
-                    name="accouregistrationNontNo"
+                    name="registrationNo"
                     onChange={handleChange}
                   />
                 </div>
